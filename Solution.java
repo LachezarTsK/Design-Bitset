@@ -47,9 +47,8 @@ public class Bitset {
     }
 
     /*
-     C++: false/true are actually 0/1.
-     JavaScript: false/true, under certain circumstances, can convert automatically to 0/1.
-     Java: this behaviour can be achieved only with helper code that does the conversion.
+     C++ | JavaScript: arithmetic operations can be done directly with false/true.
+     Java: helper code is needed that does the conversion from false/true to 0/1.
      */
     private int booleanToInt(boolean bit) {
         return bit ? 1 : 0;
